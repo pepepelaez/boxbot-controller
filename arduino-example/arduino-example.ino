@@ -192,7 +192,7 @@ void serialEvent(){
     } else if (input == "right") {
       Serial.println("RIGHT");
       right();
-    } else if (input == "halt" {
+    } else if (input == "halt") {
       Serial.println("HALT");
       halt();
     }
