@@ -183,7 +183,7 @@ void serialEvent(){
     if (input == "forward") {
       Serial.println("FORWARD");
       forward();
-    } else if (input == "backwards") {
+    } else if (input == "reverse") {
       Serial.println("REVERSE");
       reverse();
     } else if (input == "left") {
@@ -192,7 +192,7 @@ void serialEvent(){
     } else if (input == "right") {
       Serial.println("RIGHT");
       right();
-    } else if (results.value == 0x9CB9C) {
+    } else if (input == "halt" {
       Serial.println("HALT");
       halt();
     }
