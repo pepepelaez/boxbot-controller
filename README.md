@@ -8,6 +8,8 @@
 - For the waving arm function a servo motor is connected to a digital pin on the arduino and responds to commands based on IR information and can also be controlled through the boxbot-controller App.
 Wired there are two ways to control the robot’s functions one is by using an infrared TV remote  to send signals to the IR receiver wired with a capacitor to a digital pin on the Arduino board. The other way to control the robot is through the boxbot-controller App which would send signals through Wifi connection to a Raspberry Pi board connected to the Arduino Uno through a USB-b cable.
 
+![overview](https://raw.githubusercontent.com/pepepelaez/boxbot-controller/master/CP2_Assignment-01.jpg)
+
 ![schematic](https://raw.githubusercontent.com/pepepelaez/boxbot-controller/master/robot_schematic_bb.jpg)
 
   For the software, there are two main sketches utilized. The first sketch is written in C++ and is compiled by the Arduino App and uploaded directly from to the Arduino board. This program includes all the functions the robot can do and a series of commands to make the robot do the different actions based on the information provided. If the information are infrared signals, the code responds to the IR hex numbers. If the information is through the boxbot-App, the code reads the information given through the Raspberry Pi. This code is stored in the arduino-example folder.
